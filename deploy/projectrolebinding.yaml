@@ -1,0 +1,19 @@
+apiVersion: management.cattle.io/v3
+kind: ProjectRoleTemplateBinding
+metadata:
+  annotations:
+    lifecycle.cattle.io/create.cluster-prtb-sync_local: "true"
+    lifecycle.cattle.io/create.mgmt-auth-prtb-controller: "true"
+  finalizers:
+  - controller.cattle.io/mgmt-auth-prtb-controller
+  - clusterscoped.controller.cattle.io/cluster-prtb-sync_local
+  labels:
+    auth.management.cattle.io/crb-rb-labels-updated: "true"
+    authz.cluster.cattle.io/crb-rb-labels-updated: "true"
+    cattle.io/creator: norman
+  name: u-7kvgr-member
+  namespace: p-n5ps2
+projectName: c-lh2xw:p-n5ps2
+roleTemplateName: project-member
+userName: u-7kvgr
+userPrincipalName: local://u-7kvgr
