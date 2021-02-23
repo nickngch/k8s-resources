@@ -3,4 +3,4 @@ kind: Namespace
 metadata:
   name: testing101
   annotations:
-    field.cattle.io/projectId: c-lh2xw:p-fwkxg 
+    field.cattle.io/projectId: c-zvmcw:p-fwkxg 
